@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Flipkart Tracker</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form method="post" autocomplete="off">
+            <h1>Flipkart Tracker</h1>
+            {% block form_content %}{% endblock %}
+        </form>
+    </div>
+</body>
+</html>

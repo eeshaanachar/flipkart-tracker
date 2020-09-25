@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block form_content %}
+    <h2>Receive an email whenever the price of your favourite product falls below your wanted price.</h2>
+    
+    <div class="form-field">
+        <input type="url" id="prodUrl" name="prodUrl" required>
+        <label for="prodUrl">Product URL</label>
+    </div>
+
+    <div class="form-field">
+        <input type="number" min="0" id="wantedPrice" name="wantedPrice" required>
+        <label for="wantedPrice">Wanted Price (₹)</label>
+    </div>
+
+    <div class="form-field">
+        <input type="email" id="mailId" name="mailId" required>
+        <label for="mailId">Email</label>
+    </div>
+
+    <button type="submit">Submit</button>
+{% endblock %}
